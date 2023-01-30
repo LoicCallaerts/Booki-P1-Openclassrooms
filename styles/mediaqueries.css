@@ -1,0 +1,489 @@
+@media (max-width:1012px)
+{
+	#mes_hebergements h3 {
+		font-size: 12px;
+	} 
+
+}
+	
+
+@media (min-width: 769px) and (max-width: 991px)
+{
+
+
+/* CSS général */
+	body
+	{
+		margin: auto;
+
+	}
+
+/* Section Header */
+
+	#logo img
+	{
+
+		align-items: center;
+		margin: auto;
+	}
+
+
+	input {
+		width: auto;
+	}
+
+/* Section filtres */
+
+	.list_group .fas
+	{
+   		background-color: #DEEBFF;
+   	}
+
+	.list_group li 
+	{
+		margin-top: 10px;
+	}
+
+	.list_group li:hover
+	{
+		background: #DEEBFF;
+		color: #0065FC;
+	}
+
+	.list_group .fas:hover
+	{
+		color: black;
+	}
+
+
+/* Section Grey areas */
+
+	#hebergement 
+	{
+		order: 2;
+		margin-top: 40px;
+		width: 95%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	aside 
+	{
+		order: 1;
+		width: 95%;
+		margin: auto;
+	}
+
+	#gray_areas
+	{
+		display: flex;
+		flex-direction: column;
+	}
+
+	#hebergement
+	{
+		width: 90%;
+	}
+
+	aside
+	{
+		width: 90%;
+	}
+
+	#activites
+	{
+		grid-template-columns: 1fr 1fr;
+	}
+
+	#activites_marseilles
+	{
+		padding: 32px;
+	}
+
+	#notre_dame
+	{
+		margin-top: 20px;
+	}
+
+	.caption
+	{
+		line-height: 20px;
+		margin-left: 10px;
+	}
+
+
+	aside h2
+	{
+		margin-left: 44px;
+	}
+
+	.fa-chart-line
+	{
+		margin-right: 40px;
+	}
+
+
+}
+
+@media screen and (max-width: 768px)
+
+	/* CSS Général du site */
+{
+	body {
+		padding: 0px ;
+	}
+	h1
+	{
+		font-size: 19.2px;
+	}
+
+	h2
+	{
+		font-size: 16px;
+	}
+
+	p
+	{
+		font-size: 12.8px;
+	}
+
+/* Section Zone de recherche */
+
+	.liens 
+	{
+		display: inline-block ;
+	}
+
+	
+	#search
+	{
+		margin-right: auto;
+		margin-top: 10px;
+	}
+
+	#search h1, #search p
+	{
+		width: 95%;
+		margin-left: 10px;
+	}
+
+	form
+	{
+		width: 95%;
+		margin: auto;
+	}
+
+	input 
+	{
+		width: 65%;
+		height: 50px;
+		margin: auto;
+		border-width: 2px 0 2px 0;
+	}
+
+	input::placeholder
+{
+	font-weight: bold;
+	color: #000000;
+}
+
+	button
+	{
+		background-size: 30px;
+		background-repeat: no-repeat;
+		width: 50px;
+		border-radius: 10px 10px 10px 10px;
+		color: rgba(255,255,255,1);
+		overflow: hidden;
+		background-color: #0065FC;
+		background-position: center;
+		height: 50px;
+	}
+
+	button:hover
+	{
+		background: #DEEBFF;
+	    color: #000000;
+	    background-size: 30px;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+
+	.fas.fa-map-marker-alt
+	{
+		height: 27px;
+	}
+	
+	button span
+	{
+		display: none;
+	}
+
+	.fas.fa-map-marker-alt
+	{
+		padding-top: 20px;
+		padding-bottom: 4px;
+	}
+
+/* Section Header */
+
+	#logo
+	{
+		width: 60%;
+		justify-content: center;
+	}
+
+	nav
+	{
+		order: 3;
+		width: 100%;
+		flex-wrap: wrap;
+		margin-top: 10px;
+		justify-content: normal;
+		height: 40px;
+		align-items: center;
+	}
+
+	nav a 
+	{
+		margin: 0;
+		width: 50%;
+		text-align: center;
+		border-bottom: 3px solid #F2F2F2;
+		border-top: none;
+	}
+
+	.liens_wrapper {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	li a
+	{
+		padding: 20px 0;
+	}
+
+	nav a:hover
+	{
+	color: #0065FC;
+	border-bottom: 3px solid #0065FC;
+	border-top: none;
+	}
+
+	header
+	{
+		flex-wrap: wrap;
+		justify-content: space-between;
+		margin: 0;
+	}
+
+	#search h1
+	{
+		width: 75%;
+	}
+
+	#loupe{
+		display: block;
+	}
+
+	form {
+		padding-right: 15px;
+	}
+
+ /* Section Mes filtres */
+
+	#titre_filtres
+	{
+		margin-left: 10px;
+	}
+
+	#filtres
+	{
+		flex-direction: column;
+		margin: 5px 0 0 5px; 
+		margin: auto;
+		padding-left: 17px;
+	}
+
+	#mes_filtres
+	{
+		flex-direction: column;
+		align-items: flex-start;
+		margin-top: 10px;
+		margin-left: 10px;
+	}
+
+	.list_group li
+	{
+		margin-top: 10px;
+		margin-right: 0;
+		margin-left: 0;
+	}
+
+	.list_group li:hover
+	{
+		background: #DEEBFF;
+		color: #0065FC;
+	}
+
+	#mes_filtres ul
+	{
+		margin-left: -34px;
+	}
+
+.info {
+	font-size: 18px;
+	padding-left: 9px;
+}
+/* Section "hebergements" */
+
+	main
+	{
+		margin-top: 15px;
+	}
+
+	#gray_areas 
+	{
+		display: flex;
+		flex-direction: column;
+	}
+
+	#mon_ancre1{
+		padding-left: 15px;
+	}
+	#hebergement
+	{
+		order: 2;
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+		height: auto;
+		border-radius: 0;
+		margin-top: 10px;
+		background: transparent;
+	}
+
+	#mes_hebergements
+	{
+		display: flex;
+		flex-direction: column;
+		height: auto;
+	}
+
+/* Section les plus populaires */
+
+	aside
+	{
+		order: 1;
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+		height: auto;
+		border-radius: 0;
+		margin-top: 10px;
+		background: #F2F2F2;
+	}
+
+	.bloc_populaire figure {
+		width: 86%;
+	}
+
+	#titre_populaire{
+		margin-top: 10px;
+	}
+
+	footer
+	{
+		display: flex;
+		flex-direction: column;
+		margin-top: 0;
+	}
+
+/* Section hébergement à Marseille */
+
+	article
+	{
+		width: 90%;
+		margin-bottom: 10px;
+		margin-left: auto;
+		margin-right: auto;
+
+	}
+
+
+	.bloc_populaire figcaption{
+		margin-left: 20px;
+	}
+	.ranking{
+		font-size: 10px;
+	}
+
+
+/* Section activités à Marseille */
+	#mon_ancre2 {
+		margin-bottom: 30px;
+	}
+	#activites_marseilles h2
+	{
+		margin-left: 27px;
+		font-size: 16px;
+		font-weight: bold;
+	}
+
+	#activites
+	{
+		grid-template-columns: 1fr;
+		width: 100%;
+		margin: auto;
+		padding-bottom: 25%;
+		gap: 0;
+
+	}
+
+	 #activites figure
+	{
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 40px;
+	}
+
+	#activites img
+	{
+		height: 135px;
+		margin: auto;
+		width: 100%;
+	}
+
+	.col_activites, .col2_activites, .col4_activites
+	{
+		width: 100%;
+		max-width: 758px;
+		height: auto;
+	}
+
+
+	#activites figure
+	{
+		margin-top: 0;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.afficher_plus {
+		padding-left: 15px;
+		font-weight: bold;
+		font-size: 16px;
+	}
+/* Section Footer */
+
+	.col_footer  
+	{
+		width: 100%;
+	}
+}
+/* (ryade.mecibah@gmail.com) */

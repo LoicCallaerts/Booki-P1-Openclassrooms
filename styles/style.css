@@ -1,0 +1,620 @@
+/* CSS général de la page */
+
+input::placeholder{
+	opacity: 1;
+	color: #000000;
+}
+
+:root {
+	--blue: #0065FC;
+	--light-blue: #DEEBFF;
+	--grey: #F2F2F2;
+	--greyer : rgba(0,0,0,0.3) ;
+  }
+  
+body
+{
+	font-family: Ralewway;
+	margin: 0;
+	padding: 0px 40px;
+}
+
+main
+{
+	font-family: Raleway;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	margin: auto;
+}
+
+h1
+{
+	font-family: Raleway;
+	font-size: 30.4px;
+	font-weight: bold;
+	margin: 15px 0 0 0;
+	font-family: 'Raleway', sans-serif;
+}
+
+h2
+{
+	font-family: Raleway;
+	font-size: 19.2px;
+	font-weight: bold;
+	margin-top: 30px;
+	font-family: 'Raleway', sans-serif;
+}
+
+h3
+{
+	font-family: Raleway;
+	font-size: 16px;
+	font-weight: bold;
+	font-family: 'Raleway', sans-serif;
+}
+
+p
+{
+	font-family: Raleway;
+	font-size: 14px;
+}
+
+a 
+{
+	color: inherit;
+	text-decoration: none;
+}
+
+/* HEADER */ 
+
+header
+{
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	margin-left: 15px;
+	align-items: center;
+}
+
+#logo
+{	display: flex;
+	flex-grow: 3;
+}
+
+#logo img
+{
+	width: 100px;
+	height: 50px;
+}
+
+#logo a:hover
+{
+
+	color: var(--light-blue);
+}
+
+nav
+{
+	display: flex;
+
+}
+
+nav a
+{
+
+	margin-left: 50px;
+	padding: 16px;
+	font-family: 'Raleway', sans-serif;
+}
+
+.liens {
+	border-top: 3px transparent solid;
+
+}
+
+.liens:hover {
+	border-color: var(--blue);
+	color: var(--blue);
+}
+
+.liens_wrapper {
+	padding-right: 15px;
+} 
+nav ul
+{
+	display: flex;
+	list-style: none;
+}
+
+/* ZONE DE RECHERCHE */
+
+#search
+{
+	display: flex;
+	flex-direction: column;
+	margin-left: 15px;
+}
+
+input
+{
+	width: 19%;
+	height: 45px;
+	border-width: 1px 0 1px 0;
+	border-color: var(--grey);
+	border-style: solid;
+	font-size: 15px;
+	color: #000000;
+	padding: 10px;
+}
+
+input#site-search::placeholder
+{
+	font-weight: bold;
+	color: #000000;
+}
+
+input:hover
+{
+	background: var(--light-blue);
+}
+
+input:focus
+{
+	background: #d3d3d3;
+}
+
+ button
+{
+	height: 45px;
+	background: var(--blue);
+	color: #FFFFFF;
+	padding: 10px;
+   font-size: 14px;      
+   border: none;
+   margin-left: -5px;
+   cursor: pointer;
+   border-radius: 0 10px 10px 0;
+}
+
+.fas.fa-map-marker-alt
+{
+	background: var(--grey);
+	height: 31px;
+	width: 50px;
+	text-align: center;
+	padding-top: 14px;
+	margin-right: -5px;
+	border-radius: 10px 0 0 10px;
+}
+
+#loupe {
+	display: none;
+}
+
+button:hover
+{
+	background:var(--light-blue);
+	color: #000000;
+}
+
+/* Section "filtres" */
+
+#filtres
+{
+	display: flex;
+	flex-direction: column;
+	margin: 0 15px 0 15px; 
+}
+
+#mes_filtres
+{
+	display: flex;
+	align-items: center;
+}
+
+#mes_filtres ul
+{
+	list-style: none;
+}
+
+.list_group li
+{
+	border: 2px solid var(--greyer);  
+	border-radius: 30px;
+	text-align: center;
+	padding-right: 15px;
+	cursor: pointer;
+	display: inline-block;
+	height: 40px;
+	font-family: 'Raleway', sans-serif;
+	font-weight: bold;
+	font-size: 14px;
+}
+
+.list_group li:hover
+{
+	background:var(--light-blue);
+	color: var(--blue);
+}
+
+.list_group .fas
+{
+   background-color: var(--light-blue);
+   color: var(--blue);
+   padding: 14px 16px;
+   font-size: 16px;
+   cursor: pointer;
+   border-radius: 100%; 
+   margin: -2px 10px 0 -3px;
+   width: 15px;
+}
+
+.list_group .fas:hover
+{
+	color: black;
+}
+
+#titre_filtres
+{
+	font-family: 'Raleway', sans-serif;
+	font-weight: bold;
+}
+
+.fa-info-circle
+{
+	margin-right: 10px;
+	background: var(--blue);
+	color: #FFFFFF;
+	border: 2px solid var(--grey);
+	border-radius: 50%;
+	font-size: 20px;
+}
+
+.info {
+	display: flex;
+	align-items: center;
+	margin: 0 10px;
+	font-size: 16px;
+}
+
+
+/* Section Hébergements à Marseille */
+
+
+#gray_areas
+{
+	display: flex;
+	margin-top: 10px;
+ 	gap: 30px;
+}
+
+#hebergement
+{
+ 	display: flex ; 
+  	flex-direction: column;
+	background: var(--grey);
+	border-radius: 20px;
+	width: 63%; 
+	height: 636px;  
+	align-items: center;
+}
+
+#mes_hebergements
+{
+  	width: 93%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+  	gap: 2%;
+}
+
+#mon_ancre1 {
+  	width: 90%;
+}
+
+article
+{
+	background-color: white;
+	width: 30% ;   
+	border: 3px solid #ffffff; 
+	border-radius: 20px;
+	line-height: 10px;
+	margin-top: 25px;
+	box-shadow: 0 0 16px #0000002e;	
+}
+
+article img
+{
+	margin-top: -15px;
+	width: 100%;
+	height: 110px;
+	border-radius: 20px 20px 0 0;
+	object-fit: cover;
+}
+
+article h2
+{
+	margin-left: 20px;
+	margin-bottom: 25px;
+  	font-size: small;
+}
+
+
+article span
+{
+	text-decoration: none;
+}
+.card:hover {
+	transform: scale(1.02);
+}
+
+.caption
+{
+	margin: 10px;
+	line-height: 15px;
+  	font-size: 14px;
+}
+
+.afficher_plus a
+{
+	font-weight: bold;
+	font-family: 'Raleway', sans-serif;
+}
+
+.afficher_plus
+{
+	margin-top: 30px;
+	width: 90%;
+}
+
+.afficher_plus a:hover
+{
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+.fas.fa-star.gray
+{
+	color: #dcdcdc;
+}
+
+/*"Populaires" */
+
+aside 
+{
+	background: var(--grey);
+	border-radius: 20px;
+	display: flex;
+  	width: 33%; 
+	flex-direction: column;
+	margin: auto;
+	height: 636px; 
+	justify-content: space-around;
+}
+
+.bloc_populaire figure
+{
+	background-color: white;
+	display: flex;
+	flex-direction: row;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	border: 3px solid #ffffff;
+	border-radius: 20px;
+	border-radius: 20px;
+	
+}
+
+.bloc_populaire figure :hover {
+
+	transform: scale(1.02);
+	
+}
+
+.bloc_populaire img
+{
+	width: 35%;
+	border-radius: 20px 0 0 20px;
+	height: 150px;
+	margin-top: 1px;
+	object-fit: cover;
+}
+
+.bloc_populaire figcaption
+{
+	height: 135px;
+	width: 65%;
+	border-radius: 0 20px 20px 0;
+	margin-left: 10px;
+  	line-height: 14px;
+  	font-size: 14px;
+}
+
+.bloc_populaire a
+{
+	text-decoration: none;
+}
+
+.bloc_populaire .ranking
+{
+	margin-top: 55px;
+  
+}
+
+.fa-solid fa-star
+{
+	margin-right: 0px;
+	justify-content:left;
+}
+
+.ranking
+{
+	color:var(--blue);
+	font-size: 12px;
+}
+
+figcaption span
+{
+	font-family: 'Raleway', sans-serif;
+}
+
+#titre_populaire
+{
+	display: flex;
+	justify-content: space-between;
+  	width: 80%;
+	padding-bottom: 10px;
+	margin-left: 30px;
+}
+
+/* Section "Activités à Marseille" */
+
+	#activites figure
+	{
+		margin: 0;
+		padding: 0;
+	}
+	
+
+	#activites figure:hover
+	{
+		transition-duration: 0.2s;
+		box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+	}
+
+	#activites figcaption 
+	{
+		background: #FFFFFF; 
+		height: 40px;
+		border-radius: 0 0 20px 20px;
+		font-weight: bold;
+		margin-top: -4px;
+		padding: 15px 0 0 15px;
+		font-family: 'Raleway', sans-serif;
+	}
+
+	#activites_marseilles
+	{
+		display: flex;
+		flex-direction: column;
+		margin-top: 30px;
+	}
+
+	#activites
+	{
+		display: grid;
+		grid-template-columns: repeat(4,1fr );
+		width: 100%;
+		margin-top: 20px;
+		justify-content: space-around;
+		gap: 3%;
+	}
+
+	.col_activites img
+	{
+		min-width: 200px; 
+		width: 100%;
+		height: 385px;
+		border-radius: 20px 20px 0 0;
+		object-fit: cover;
+	}
+
+	.col_activites, .col4_activites
+	{
+		max-width: 300px;
+	}
+
+
+	#fort img
+	{
+		min-width: 200px; 
+		width: 100%;
+		height: 180px;
+		border-radius: 20px 20px 0 0;
+		object-fit: cover;
+	}
+
+	#iles img
+	{
+		min-width: 200px; 
+		width: 100%;
+		height: 100px;
+		border-radius: 20px 20px 0 0;
+		padding-bottom:  10px;
+		object-fit: cover;
+	}
+
+	figure#iles
+	{
+		margin-top: 40px;
+	}
+
+	#notre_dame img
+	{
+		min-width: 200px; 
+		width: 100%;
+		height: 135px;
+		border-radius: 20px 20px 0 0;
+		object-fit: cover;
+	}
+
+	#parc img
+	{
+		min-width: 200px; 
+		width: 100%;
+		height: 135px;
+		border-radius: 20px 20px 0 0;
+		padding-bottom: 20px;
+		object-fit: cover;
+	}
+
+	figure#parc 
+	{
+		margin-top: 40px;
+	}
+
+	.col_activites, #fort, #iles, #notre_dame, #parc
+	{
+		box-shadow: 0px 0px 20px #c0c0c0;
+		border-radius: 20px;
+	}
+
+/* Section Footer */
+
+footer 
+{
+	display: flex;
+	background:var(--grey);
+	color: black;
+	width: 100%;
+	margin-top: 50px;
+}
+
+footer ul
+{
+	list-style-type: none;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	line-height: 25px;
+}
+
+footer li
+{
+	font-family: Raleway;
+	margin-right: 15px;
+}
+
+footer a
+{
+	text-decoration: none;
+}
+
+.col_footer  
+{
+	width: 33%;
+}
+
